@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigatiebalk -->
+    <nav class="bg-red-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <div class="bg-white rounded-full p-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+                        alt="YouTube Logo" class="h-6">
+                </div>
+                <span class="text-lg font-bold ml-2"></span>
+            </div>
+
+            <!-- Zoekbalk -->
+            <form action="#" method="GET" class="flex-1 mx-4">
+                <input type="text" name="q" placeholder="Zoeken..."
+                    class="w-full p-2 rounded-md border border-gray-300 text-black">
+            </form>
+
+            <!-- Acties -->
+            <div class="flex space-x-4">
+                <button class="bg-gray-800 text-white px-4 py-2 rounded">Inloggen</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Layout -->
+    <div class="flex">
+        <!-- Linker Navigatiekolom -->
+        <aside class="bg-white w-48 p-4 shadow-md">
+            <nav class="space-y-4">
+                <a href="#" class="flex items-center space-x-3 hover:text-red-600">
+                    <span>🏠</span>
+                    <span class="font-medium">Home</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 hover:text-red-600">
+                    <span>📹</span>
+                    <span class="font-medium">Shorts</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 hover:text-red-600">
+                    <span>📁</span>
+                    <span class="font-medium">Bibliotheek</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Hoofdinhoud -->
+        <main class="flex-1 p-6">
+            <h1 class="text-xl font-bold mb-4">Aanbevolen video's</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Video 1 -->
+                <div class="bg-white shadow-md rounded overflow-hidden">
+                    <img src="https://i.ytimg.com/vi/AyzmtX6omXw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAkqja4HZIjW7-eKoPa2j4dyEAicw"
+                        alt="Thumbnail" class="w-full">
+                    <div class="p-4">
+                        <h2 class="font-bold text-md truncate">Hoe je een Pro wordt in Fortnite</h2>
+                        <p class="text-sm text-gray-600">FishinatorNL • 10k weergaven</p>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="bg-white shadow-md rounded overflow-hidden">
+                    <img src="https://www.ajax.nl/media/hjbd4aiw/royalist1q1.jpg?quality=85&rnd=132852516497100000"
+                        alt="Thumbnail" class="w-full">
+                    <div class="p-4">
+                        <h2 class="font-bold text-md truncate">Ik speel bij Ajax</h2>
+                        <p class="text-sm text-gray-600">Royalistq • 400k weergaven</p>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="bg-white shadow-md rounded overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeA15Zy9ane4gewZxI29rYevHHnV0zuK9lQ&s"
+                        alt="Thumbnail" class="w-full">
+                    <div class="p-4">
+                        <h2 class="font-bold text-md truncate">Zo win je elke game</h2>
+                        <p class="text-sm text-gray-600">FishinatorNL • 5M weergaven</p>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="bg-white shadow-md rounded overflow-hidden">
+                    <img src="https://i.ytimg.com/vi/5SW-5Yx3Afw/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEyhEMA8=&rs=AOn4CLAMt19xmU6KvOjpx-B9Q3d5LfNRVQ"
+                        alt="Thumbnail" class="w-full">
+                    <div class="p-4">
+                        <h2 class="font-bold text-md truncate">Rap God | Official Music Video</h2>
+                        <p class="text-sm text-gray-600">Eminem • 500M weergaven</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-8 p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 YouTube (Nagebouwd met Tailwind). Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
